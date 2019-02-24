@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<package name="default-pagkage" namespace="" extends="struts-default">
+		<action name="loginPage" class="com.sjp.ssh.web.UserAction">
+			<result name="success">jsp/login/login.html</result>
+		</action>
+		<action name="login" class="com.sjp.ssh.web.UserAction" method="login">
+		</action>
+	</package>
+</struts>
